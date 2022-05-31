@@ -12,6 +12,6 @@ cp tfvars .tfvars
 
 Run Terraform:
 ```
-terraform init
+terraform init -upgrade
 terraform plan -var-file=.tfvars
 ```

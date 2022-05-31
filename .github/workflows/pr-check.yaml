@@ -1,0 +1,14 @@
+name: Pre Pull Request Check
+on:
+  pull_request:
+    types: ['opened', 'synchronize']
+    paths:
+      - '**.tf'
+
+jobs:
+  prepr-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: tffmtcheck
+        run: |
+           sh "scripts/terraform-fmt.sh"

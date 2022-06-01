@@ -2,7 +2,6 @@
 echo "==> Validating module terraform codes..."
 error=false
 (terraform init -upgrade && terraform validate -json | jq -e .valid) || error=true
-terraform validate -json
 if ${error}; then
   echo "------------------------------------------------"
   echo ""

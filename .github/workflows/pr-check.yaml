@@ -29,21 +29,18 @@ jobs:
       - name: gencheck
         run: |
           make gencheck
+      - name: gofmtcheck
+        run: |
+          make gofmtcheck
       - name: tfvalidatecheck
         run: |
           make tfvalidatecheck
       - name: tffmtcheck
         run: |
           make tffmtcheck
-      - name: gofmtcheck
-        run: |
-          make gofmtcheck
       - name: terrafmtcheck
         run: |
           make terrafmtcheck
-      - name: golint
-        run: |
-          make golint
       - name: tflint
         run: |
           make tflint

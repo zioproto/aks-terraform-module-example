@@ -2,7 +2,7 @@
 echo "==> Checking terraform codes are formatted..."
 error=false
 git show --summary
-terraform fmt -check -recursive || error=true
+terraform fmt -check -recursive -diff || error=true
 if ${error}; then
   echo "------------------------------------------------"
   echo ""

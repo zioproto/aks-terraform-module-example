@@ -1,0 +1,4 @@
+[submodule "terraform-azurerm-aks"]
+	path = terraform-azurerm-aks
+	url = https://github.com/zioproto/terraform-azurerm-aks
+	branch = terraform-fmt-fixes
